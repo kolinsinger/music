@@ -65,6 +65,7 @@
   font-family: "Open Sans", sans-serif;
   line-height: 22px;
   border: 2px solid #000;
+  position: relative;
 }
 .intro__nav-link:last-child {
   margin-right: 0;
@@ -131,6 +132,22 @@
   .video-block__item:nth-child(odd) {
     margin-right: 0;
   }
+
+  .header {
+    padding-bottom: 20px;
+  }
+
+  .header__title {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__title-blue {
+    color: #5a5af5;
+  }
+  .header__title-yellow {
+    color: yellow;
+    margin-top: 10px;
+  }
 }
 @media (max-width: 425px) {
   .intro__nav {
@@ -141,6 +158,11 @@
     margin-top: 10px;
     margin-right: 0px;
   }
-}
 
-/*# sourceMappingURL=style.css.map */
+  .header {
+    padding-bottom: 10px;
+  }
+  .header__title {
+    font-size: 1.2rem;
+  }
+}
