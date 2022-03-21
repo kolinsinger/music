@@ -77,6 +77,14 @@
   transition: .2s linear;
 }
 
+.card__num {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.card__num:hover {
+  font-weight: bold;
+}
+
 .video-block__inner {
   display: flex;
   flex-wrap: wrap;
@@ -166,3 +174,5 @@
     font-size: 1.2rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
