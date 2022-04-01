@@ -1,3 +1,7 @@
+
+window.addEventListener('scroll', showNextVideoByScrollingPage)
+document.querySelector('.intro__text-subdonat').addEventListener('click', copyCardNum)
+
 function copyCardNum(event) {
 	if (event.target.classList.contains('card__num')) {
 		if (event.target.innerText != 'номер скопірований!') {
@@ -19,4 +23,24 @@ function copyCardNum(event) {
 	}
 }
 
-document.querySelector('.intro__text-subdonat').addEventListener('click', copyCardNum)
+/* Show Video by scrolling page
+======================= */
+
+function showNextVideoByScrollingPage() {
+	const topScrollPixels = window.pageYOffset;
+	if (topScrollPixels > 300 && topScrollPixels < 999) {
+		const videoArr = document.querySelectorAll('.video-block__item')
+		videoArr.forEach((item, i) => {
+			if (i > 1 && i < 4) {
+				item.style.display = "flex"
+			}
+		})
+	} else if (topScrollPixels > 1000) {
+		const videoArr = document.querySelectorAll('.video-block__item')
+		videoArr.forEach((item, i) => {
+			if (i > 3)
+				item.style.display = "flex"
+		})
+		window.removeEventListener('scroll', getPix)
+	}
+}
