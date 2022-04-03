@@ -10,11 +10,13 @@
   height: 100px;
   position: relative;
 }
+
 .header__logo {
   position: absolute;
   top: 10px;
   left: 15px;
 }
+
 .header__logo-link {
   text-decoration: none;
   color: #fff;
@@ -23,6 +25,7 @@
   font-weight: bold;
   letter-spacing: 0px;
 }
+
 .header__title {
   text-align: center;
   padding-top: 50px;
@@ -39,12 +42,15 @@
 }
 
 .intro__text {
-  margin: 25px 0;
+  margin: 25px 10px;
 }
+
 .intro__text-donat {
+  display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 15px;
+  margin: 0 10px 15px;
 }
+
 .intro__text-subdonat {
   font-style: italic;
   margin-bottom: 25px;
@@ -55,6 +61,7 @@
   justify-content: center;
   margin-bottom: 25px;
 }
+
 .intro__nav-link {
   color: #fff;
   background-color: #000;
@@ -67,9 +74,11 @@
   border: 2px solid #000;
   position: relative;
 }
+
 .intro__nav-link:last-child {
   margin-right: 0;
 }
+
 .intro__nav-link:hover {
   background-color: #f5bfaf;
   border-color: transparent;
@@ -81,6 +90,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
 .card__num:hover {
   font-weight: bold;
 }
@@ -97,9 +107,11 @@
   flex-basis: 45%;
   display: flex;
 }
+
 .video-block__item-video {
   flex-basis: 100%;
-  height: 382px;
+  max-height: 382px;
+  min-height: 300px;
 }
 
 .video-block__item:nth-child(even) {
@@ -123,12 +135,15 @@
   .intro__nav {
     flex-wrap: wrap;
   }
+
   .intro__nav-link {
     width: 30%;
   }
+
   .intro__nav-link:nth-child(2) {
     margin-right: 0;
   }
+
   .intro__nav-link:nth-child(1n+3) {
     margin-top: 10px;
   }
@@ -137,6 +152,10 @@
   .video-block__item {
     flex-basis: 90%;
   }
+  .video-block__item-video {
+    min-height: 325px;
+  }
+
   .video-block__item:nth-child(odd) {
     margin-right: 0;
   }
@@ -149,9 +168,11 @@
     display: flex;
     flex-direction: column;
   }
+
   .header__title-blue {
     color: #4287f5;
   }
+
   .header__title-yellow {
     color: #e6dc2e;
     margin-top: 10px;
@@ -161,6 +182,7 @@
   .intro__nav {
     flex-wrap: wrap;
   }
+
   .intro__nav-link {
     width: 80%;
     margin-top: 10px;
@@ -170,9 +192,15 @@
   .header {
     padding-bottom: 10px;
   }
+
   .header__title {
     font-size: 1.2rem;
   }
+
+  .video-block__item-video {
+    min-height: 200px;
+  }
 }
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
