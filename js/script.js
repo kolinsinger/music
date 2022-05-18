@@ -9,7 +9,7 @@ function copyCardNum(event) {
 			range.selectNode(target);
 			window.getSelection().removeAllRanges(); // clear current selection
 			window.getSelection().addRange(range); // to select text
-			document.execCommand("copy");
+			window.navigator.clipboard.writeText(text);
 			window.getSelection().removeAllRanges();// to deselect
 			target.innerText = 'номер скопірований!'
 			target.style.color = 'green'
