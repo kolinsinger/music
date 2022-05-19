@@ -20,3 +20,5 @@ function copyCardNum(event) {
 		}
 	}
 }
+
+// asd
