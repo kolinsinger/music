@@ -1,204 +1,231 @@
 .container {
-  max-width: 1154px;
-  width: 100%;
-  margin: 0 auto;
+	max-width: 1154px;
+	width: 100%;
+	margin: 0 auto;
 }
 
+/* header
+ ===================*/
 .header {
-  background-color: #000;
-  color: #fff;
-  height: 100px;
-  position: relative;
+	background-color: #000;
+	color: #fff;
+	height: 100px;
+	position: relative;
 }
 
 .header__logo {
-  position: absolute;
-  top: 10px;
-  left: 15px;
+	position: absolute;
+	top: 10px;
+	left: 15px;
 }
 
 .header__logo-link {
-  text-decoration: none;
-  color: #fff;
-  font-size: 24px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  letter-spacing: 0px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	letter-spacing: 0px;
 }
 
 .header__title {
-  text-align: center;
-  padding-top: 50px;
-  font-weight: normal;
-  font-size: 24px;
+	text-align: center;
+	padding-top: 50px;
+	font-weight: normal;
+	font-size: 24px;
 }
 
 .intro__inner {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  color: #212121;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	color: #212121;
 }
 
 .intro__text {
-  margin: 25px 10px;
+	margin: 25px 10px;
 }
 
 .intro__text-donat {
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 10px 15px;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 10px 15px;
 }
 
 .intro__text-subdonat {
-  font-style: italic;
-  margin-bottom: 25px;
+	font-style: italic;
+	margin-bottom: 25px;
 }
 
 .intro__nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 25px;
 }
 
 .intro__nav-link {
-  color: #fff;
-  background-color: #000;
-  padding: 10px 10px;
-  min-width: 166px;
-  margin-right: 20px;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  line-height: 22px;
-  border: 2px solid #000;
-  position: relative;
+	color: #fff;
+	background-color: #000;
+	padding: 10px 10px;
+	min-width: 166px;
+	margin-right: 20px;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	line-height: 22px;
+	border: 2px solid #000;
+	position: relative;
 }
 
 .intro__nav-link:last-child {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .intro__nav-link:hover {
-  background-color: #f5bfaf;
-  border-color: transparent;
-  color: #444;
-  transition: .2s linear;
+	background-color: #f5bfaf;
+	border-color: transparent;
+	color: #444;
+	transition: .2s linear;
 }
 
 .card__num {
-  text-decoration: underline;
-  cursor: pointer;
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .card__num:hover {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .video-block__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .video-block__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  flex-basis: 45%;
-  display: flex;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	flex-basis: 45%;
+	display: flex;
 }
 
 .video-block__item-video {
-  flex-basis: 100%;
-  max-height: 382px;
-  min-height: 300px;
+	flex-basis: 100%;
+	max-height: 382px;
+	min-height: 300px;
 }
 
 .video-block__item:nth-child(even) {
-  margin-right: 0;
+	margin-right: 0;
+}
+
+.video-block__btn {
+	margin-bottom: 30px;
+	padding: 20px 40px;
+	font-size: 20px;
+	background-color: #222121;
+	color: #e7e7e7;
+	cursor: pointer;
+}
+
+.video-block__btn:hover {
+	transform: scale(110%);
+	transition: .2s;
 }
 
 .footer {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  background-color: #d8d8d8;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	background-color: #d8d8d8;
 }
 
 .footer__text {
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
 }
 
 @media (max-width: 910px) {
-  .intro__nav {
-    flex-wrap: wrap;
-  }
+	.intro__nav {
+		flex-wrap: wrap;
+	}
 
-  .intro__nav-link {
-    width: 30%;
-  }
+	.intro__nav-link {
+		width: 30%;
+	}
 
-  .intro__nav-link:nth-child(2) {
-    margin-right: 0;
-  }
+	.intro__nav-link:nth-child(2) {
+		margin-right: 0;
+	}
 
-  .intro__nav-link:nth-child(1n+3) {
-    margin-top: 10px;
-  }
+	.intro__nav-link:nth-child(1n+3) {
+		margin-top: 10px;
+	}
 }
+
 @media (max-width: 800px) {
-  .video-block__item {
-    flex-basis: 90%;
-  }
-  .video-block__item-video {
-    min-height: 325px;
-  }
+	.video-block__item {
+		flex-basis: 90%;
+	}
 
-  .video-block__item:nth-child(odd) {
-    margin-right: 0;
-  }
+	.video-block__item-video {
+		min-height: 325px;
+	}
 
-  .header {
-    padding-bottom: 20px;
-  }
+	.video-block__item:nth-child(odd) {
+		margin-right: 0;
+	}
 
-  .header__title {
-    display: flex;
-    flex-direction: column;
-  }
+	.header {
+		padding-bottom: 20px;
+	}
 
-  .header__title-blue {
-    color: #4287f5;
-  }
+	.header__title {
+		display: flex;
+		flex-direction: column;
+	}
 
-  .header__title-yellow {
-    color: #e6dc2e;
-    margin-top: 10px;
-  }
+	.header__title-blue {
+		color: #4287f5;
+	}
+
+	.header__title-yellow {
+		color: #e6dc2e;
+		margin-top: 10px;
+	}
 }
+
 @media (max-width: 425px) {
-  .intro__nav {
-    flex-wrap: wrap;
-  }
+	.intro__nav {
+		flex-wrap: wrap;
+	}
 
-  .intro__nav-link {
-    width: 80%;
-    margin-top: 10px;
-    margin-right: 0px;
-  }
+	.intro__nav-link {
+		width: 80%;
+		margin-top: 10px;
+		margin-right: 0px;
+	}
 
-  .header {
-    padding-bottom: 10px;
-  }
+	.header {
+		padding-bottom: 10px;
+	}
 
-  .header__title {
-    font-size: 1.2rem;
-  }
+	.header__title {
+		font-size: 1.2rem;
+	}
 
-  .video-block__item-video {
-    min-height: 200px;
-  }
+	.intro__text-donat {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.video-block__item-video {
+		min-height: 200px;
+	}
+
+	.video-block__btn {
+		font-size: 12px;
+	}
 }
-/*# sourceMappingURL=style.css.map */
